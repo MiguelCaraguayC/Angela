@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Angela Nicole Cabrera Vera</title>
+  </head>
+  <body>
+    <div id="content">
+      <svg id="heart" class="unShow" viewBox="0 0 32 29.6">
+        <path
+          d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
+        />
+      </svg>
+      <h1 id="title">¿Quieres compartir tu vida conmigo?</h1>
+      <h1 id="love" class="unShow">TE AMO</h1>
+      <button id="accept">Si</button>
+    </div>
+  </body>
+  <script>
+    var button = document.getElementById("accept");
+    button.addEventListener("click", () => {
+      document.getElementById("heart").classList.remove("unShow");
+      document.getElementById("love").classList.remove("unShow");
+      document.getElementById("title").classList.add("unShow");
+      button.classList.add("unShow");
+    });
+  </script>
+</html>
